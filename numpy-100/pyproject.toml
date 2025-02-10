@@ -1,0 +1,9 @@
+[project]
+name = "numpy-100"
+version = "0.1.0"
+description = "Numpy exercises"
+requires-python = ">=3.11"
+dependencies = [
+    "jupyterlab>=4.3.5",
+    "numpy>=2.2.2",
+]

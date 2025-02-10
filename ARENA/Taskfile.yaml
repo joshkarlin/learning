@@ -1,0 +1,8 @@
+# https://taskfile.dev
+
+version: '3'
+tasks:
+  env:
+    cmds:
+      - uv pip install -r repo/requirements.txt --no-config
+    silent: true

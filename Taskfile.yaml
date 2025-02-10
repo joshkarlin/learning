@@ -1,0 +1,19 @@
+# https://taskfile.dev
+
+version: '3'
+tasks:
+  arena:
+    dir: ARENA_3.0
+    cmds:
+      - |
+        source .venv/bin/activate
+        jupyter notebook --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root
+    silent: true
+
+  numpy:
+    dir: numpy-100
+    cmds:
+      - |
+        source .venv/bin/activate
+        jupyter lab --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root 
+    silent: true
