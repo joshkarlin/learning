@@ -4,5 +4,5 @@ version: '3'
 tasks:
   env:
     cmds:
-      - uv pip install -r repo/requirements.txt --no-config
+      - uv pip install -r repo/requirements.txt --index https://pypi.org/simple
     silent: true

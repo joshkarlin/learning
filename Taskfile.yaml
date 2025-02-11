@@ -1,19 +1,26 @@
 # https://taskfile.dev
 
 version: '3'
+
 tasks:
-  arena:
-    dir: ARENA_3.0
+  activated:
+    # wrapper to activate virtualenv and run commands because task's shell doesn't support source (on mac)
     cmds:
-      - |
-        source .venv/bin/activate
-        jupyter notebook --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root
+      - bash -c "cd {{.DIR}} && source .venv/bin/activate && {{.CMD}}"
     silent: true
 
-  numpy:
-    dir: numpy-100
-    cmds:
-      - |
-        source .venv/bin/activate
-        jupyter lab --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root 
+  arena:
+    deps:
+      - task: activated
+        vars:
+          DIR: ARENA
+          CMD: jupyter notebook --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root
+    silent: true
+
+  essentials:
+    deps:
+      - task: activated
+        vars:
+          DIR: essentials
+          CMD: jupyter lab --no-browser --ip=0.0.0.0 --ServerApp.token='' --ServerApp.password='' --allow-root
     silent: true

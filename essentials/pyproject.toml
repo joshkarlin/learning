@@ -1,9 +1,10 @@
 [project]
-name = "numpy-100"
+name = "essentials"
 version = "0.1.0"
-description = "Numpy exercises"
+description = "Exercises with essential ML libraries"
 requires-python = ">=3.11"
 dependencies = [
+    "einops>=0.8.1",
     "jupyterlab>=4.3.5",
     "numpy>=2.2.2",
 ]
