@@ -7,4 +7,5 @@ dependencies = [
     "einops>=0.8.1",
     "jupyterlab>=4.3.5",
     "numpy>=2.2.2",
+    "pillow>=11.1.0",
 ]

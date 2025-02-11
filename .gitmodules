@@ -1,3 +1,6 @@
 [submodule "ARENA/repo"]
 	path = ARENA/repo
 	url = https://github.com/callummcdougall/ARENA_3.0.git
+[submodule "essentials/einops"]
+	path = essentials/einops
+	url = https://github.com/arogozhnikov/einops.git
