@@ -1,9 +1,13 @@
 # Log
 
+## 2025-02-20
+
+- completed [ARENA 3.0 notebook 0 - fundamentals](ARENA_3.0/answers/0.0_Prerequisites_exercises.ipynb) (einops operations and broadcasting exercies; einsum exercises)
+
 ## 2025-02-12
 
 - started [einops basics](essentials/1-einops-basics.ipynb)
-- einops operations exercises in [ARENA 3.0 notebook 0 - fundamentals](ARENA_3.0/answers/0.0_Prerequisites_exercises.ipynb)
+- started einops operations and broadcasting exercises in [ARENA 3.0 notebook 0 - fundamentals](ARENA_3.0/answers/0.0_Prerequisites_exercises.ipynb)
 
 ## 2025-02-10
 
